@@ -127,7 +127,7 @@ h1 {
 }
 
 #countdownTime {
-  width: 25%;
+  width: 40%;
   height: 30px;
   padding: 10px;
 }
@@ -171,7 +171,7 @@ h1 {
   }
 
   #countdownTime {
-    width: 20%;
+    width: 30%;
   }
 }
 
@@ -211,6 +211,6 @@ h1 {
   }
 
   #countdownTime {
-    width: 15%;
+    width: 30%;
   }
 }

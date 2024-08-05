@@ -100,4 +100,5 @@ document.getElementById("countdownTime").addEventListener("input", (event) => {
 document.getElementById("stopCountdown").addEventListener("click", () => {
   clearInterval(countdownInterval);
   document.getElementById("mainCountdown").innerText = "Countdown gestoppt!";
+  document.getElementById("display").style.backgroundColor = "red";
 });
