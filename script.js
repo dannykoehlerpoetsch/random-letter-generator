@@ -63,11 +63,11 @@ document.getElementById("randomLetter").addEventListener("click", () => {
             document.getElementById("mainCountdown").innerText =
               "Zeit abgelaufen!";
             document.getElementById("display").style.backgroundColor = "red";
-          }
+          } 
         }, 1000);
       }
     }
-  }, 1000);
+  }, 1000); 
 });
 
 // Event Listener für den neuen Runden-Button
