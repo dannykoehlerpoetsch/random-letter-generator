@@ -6,29 +6,39 @@
     <meta name="description" content="Random Letter Generator" />
     <meta name="author" content="DaKoPo" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="./favicon-32x32.png" />
     <title>ScatterLetter</title>
   </head>
   <body>
     <div class="wrapper">
       <h1>ScatterLetter</h1>
+      <button id="help">?</button>
       <div id="output"></div>
-      
+
       <div class="button-container">
         <div id="checkbox">
           <input type="checkbox" id="enableCountdown" />
-          <label for="enableCountdown">
-            🕒
-          </label>
+          <label for="enableCountdown"> 🕒 </label>
           <label for="countdownTime" id="seconds">Sekunden:</label>
           <input type="number" id="countdownTime" placeholder="60" min="1" />
-          <button id="stopCountdown">🛑</button>
+          <button id="stopCountdown">STOP</button>
         </div>
       </div>
       <div class="button-container">
         <button id="randomLetter">neuer Buchstabe</button>
-        <button id="newRound">neue Runde</button>
+        <button id="newRound">
+          neue <br />
+          Runde
+        </button>
       </div>
     </div>
+    <audio
+      id="startSound"
+      src="./horn-stabs-entrance-14741.mp3"
+      preload="auto"
+    ></audio>
+
+    <audio id="endSound" src="./airhorn-6466.mp3" preload="auto"></audio>
     <script src="script.js"></script>
   </body>
 </html>
