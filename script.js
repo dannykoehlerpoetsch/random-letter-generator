@@ -124,16 +124,10 @@ wrapper.addEventListener("click", (event) => {
     if (target.textContent === "🛠") {
       target.style.backgroundColor = "red";
       target.textContent = "X";
-      document.getElementById("checkbox").innerHTML = `
-    <input type="checkbox" id="enableCountdown" />
-          <label for="enableCountdown"> 🕒 </label>
-          <label for="countdownTime" id="seconds">Sekunden:</label>
-          <input type="number" id="countdownTime" placeholder="sek" min="1" />
-          <button id="stopCountdown">STOP</button>
-    `;
+      document.getElementById("checkbox").style.display = "flex";
     } else {
       target.textContent = "🛠";
-      document.getElementById("checkbox").innerHTML = ``;
+      document.getElementById("checkbox").style.display = "none";
       target.style.backgroundColor = "lime";
     }
   }

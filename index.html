@@ -17,7 +17,13 @@
         <button id="settings">🛠</button>
       </div>
       <div class="button-container">
-        <div id="checkbox"></div>
+        <div id="checkbox">
+          <input type="checkbox" id="enableCountdown" />
+          <label for="enableCountdown"> 🕒 </label>
+          <label for="countdownTime" id="seconds">Sekunden:</label>
+          <input type="number" id="countdownTime" placeholder="sek" min="1" />
+          <button id="stopCountdown">STOP</button>
+        </div>
       </div>
       <div id="output"></div>
 
