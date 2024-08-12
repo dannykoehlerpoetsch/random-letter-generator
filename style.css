@@ -74,6 +74,10 @@ button {
   cursor: help;
 }
 
+#settings {
+  cursor: pointer;
+}
+
 #stopCountdown {
   background-color: red;
   border: none;
