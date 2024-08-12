@@ -35,21 +35,21 @@ body {
 }
 
 .wrapper {
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 1rem;
 }
 
 .button-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 80%;
 }
 
 button {
-  width: 40%;
+  width: 120px;
   background-color: lime;
-  margin: 0.8rem 0;
+  margin: 0.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +62,9 @@ button {
   cursor: pointer;
 }
 
-#help {
+#help,
+#settings {
+  display: inline;
   width: 50px;
   aspect-ratio: 1;
   border-radius: 50%;
@@ -109,7 +111,7 @@ h1 {
 
 #display {
   font-size: 8rem;
-  width: 70%;
+  width: 375px;
   aspect-ratio: 1;
   border-radius: 50%;
 
