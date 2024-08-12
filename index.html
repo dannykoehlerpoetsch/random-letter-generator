@@ -12,18 +12,15 @@
   <body>
     <div class="wrapper">
       <h1>ScatterLetter</h1>
-      <button id="help">?</button>
+      <div id="help-settings-buttons">
+        <button id="help">?</button>
+        <button id="settings">🛠</button>
+      </div>
+      <div class="button-container">
+        <div id="checkbox"></div>
+      </div>
       <div id="output"></div>
 
-      <div class="button-container">
-        <div id="checkbox">
-          <input type="checkbox" id="enableCountdown" />
-          <label for="enableCountdown"> 🕒 </label>
-          <label for="countdownTime" id="seconds">Sekunden:</label>
-          <input type="number" id="countdownTime" placeholder="60" min="1" />
-          <button id="stopCountdown">STOP</button>
-        </div>
-      </div>
       <div class="button-container">
         <button id="randomLetter">neuer Buchstabe</button>
         <button id="newRound">
